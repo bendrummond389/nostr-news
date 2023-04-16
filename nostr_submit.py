@@ -77,7 +77,3 @@ async def publish_to_nostr(summary):
             await publish(websocket, event)
 
             await handle_response(websocket)
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
